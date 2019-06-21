@@ -123,8 +123,15 @@ class InertialWheelPendulum(VectorSystem):
         computing the linearized dynamics of this system around the
         specified point.
         '''
+        
+        a11 = -(self.m1*self.l1 + self.m2*self.l2)*self.g*math.cos(q_f[0])  
+        partial_tauG_f = np.array([[a11, 0.],[0., 0.]])
         A = np.zeros((4, 4))
         B = np.zeros((4, 1))
+        A[0:2,2:4] = np.eye(2,2)
+        A[2:4,0:2] = np.linalg.inv(M).dot(partial_tauG_f)
+
+        B[2:4] = np.linalg.inv(M).dot(B_f)
         return (A, B)
 
 class PendulumController(VectorSystem):
