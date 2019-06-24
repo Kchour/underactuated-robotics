@@ -64,8 +64,7 @@ class InertialWheelPendulum(VectorSystem):
             raise ValueError("You commanded an out-of-range input of u=%f"
                               % (u[0]))
         else:
-            u[0] = max(-self.input_max, min(self.input_max, u[0]))
-
+	    u[0] = max(-self.input_max, min(self.input_max, u[0]))
         # Use the manipulator equation to get qdd.
         q = x[0:2]
         qd = x[2:4]
