@@ -1,4 +1,56 @@
 {
-    "output": "Unknown exception while setting up: Traceback (most recent call last):\n  File \"test_set_3.py\", line 457, in run_tests\n    lambda: imp.load_source('set_3_for_testing', '/tmp/set_3_for_testing.py'))()\n  File \"/tmp/set_3_for_testing.py\", line 2231\nSyntaxError: Non-ASCII character '\\xe2' in file /tmp/set_3_for_testing.py on line 2231, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details\n",
-    "score": 0.0
+    "execution_time": "5.54", 
+    "tests": [
+        {
+            "score": 4, 
+            "max_score": 4, 
+            "name": "Problem 2_1: Finding Q"
+        }, 
+        {
+            "score": 2, 
+            "max_score": 2, 
+            "name": "Problem 3_1: Linearization, A matrix"
+        }, 
+        {
+            "score": 2, 
+            "max_score": 2, 
+            "name": "Problem 3_1: Linearization, B matrix"
+        }, 
+        {
+            "output": "Controllability matrix: \n[[1. 0. 1. 0.]\n [0. 1. 0. 1.]]\nrank:  2\nControllability matrix: \n[[1. 0. 0. 0.]\n [0. 1. 0. 0.]]\nrank:  2\nControllability matrix: \n[[ 0.  -0.1  0.  -0.5]\n [ 0.   1.1  0.   0.5]\n [-0.1  0.  -0.5  0. ]\n [ 1.1  0.   0.5  0. ]]\nrank:  4\nControllability matrix: \n[[ 0.  -0.1  0.   0.5]\n [ 0.   1.1  0.  -0.5]\n [-0.1  0.   0.5  0. ]\n [ 1.1  0.  -0.5  0. ]]\nrank:  4\nControllability matrix: \n[[0. 0.]\n [0. 0.]]\nrank:  0\nControllability matrix: \n[[1. 1.]\n [1. 1.]]\nrank:  1\nControllability matrix: \n[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]\n [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]\n [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]\n [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]\n [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]\nrank:  0\n", 
+            "score": 2, 
+            "max_score": 2, 
+            "name": "Problem 3.2: Controllability"
+        }, 
+        {
+            "output": "A_reduced: \n[[ 0.  1.  0.]\n [ 5.  0.  0.]\n [-5.  0.  0.]]\nB_reduced: \n[ 0.  -0.1  1.1]\nK: \n[[-760.018 -354.562  -14.142]]\nS: \n[[671.107 313.785  25.071]\n [313.785 147.005  11.752]\n [ 25.071  11.752   1.004]]\nQ: \n[[1. 0. 0.]\n [0. 1. 0.]\n [0. 0. 1.]]\n", 
+            "score": 4, 
+            "max_score": 4, 
+            "name": "Problem 3.3: LQR"
+        }, 
+        {
+            "score": 2, 
+            "max_score": 2, 
+            "name": "Problem 3.4: LQR ROA, Prologue"
+        }, 
+        {
+            "score": 2, 
+            "max_score": 2, 
+            "name": "Problem 3.5: LQR ROA, Evaluating F, V, and Vdot"
+        }, 
+        {
+            "output": "Neg:  32218.505388964943 0.02549796216839756\nPOS:  51804.58241215834 0.7131899495107661\nTest Failed: Vdot sampled at x0=[3.18  4.143 0.641 6.925] was positive (Vdot = 544.2979155488295)\n", 
+            "score": 0.0, 
+            "max_score": 3, 
+            "name": "Problem 3.6: LQR ROA, Numerical estimate of the ROA"
+        }, 
+        {
+            "output": "Test Failed: x0 = [0. 0. 0. 0.] did not converge to the upright fixed point. Final state was instead [   0.647 -400.165    0.362  -13.838]\n", 
+            "score": 0.0, 
+            "max_score": 4, 
+            "name": "Problem 3.8: Combined Swing-Up and Stabilization"
+        }
+    ], 
+    "score": 18.0, 
+    "leaderboard": []
 }

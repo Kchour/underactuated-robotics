@@ -478,8 +478,8 @@ def run_tests(local = True,
         with open(test_output_file, "w") as f:
             JSONTestRunner(stream=f).run(suite)
 
-    os.system("rm -f /tmp/set_3_for_testing.py /tmp/set_3_for_testing.pyc")
-    os.system("rm -f /tmp/set_3.py /tmp/set_3.pyc")
+    #os.system("rm -f /tmp/set_3_for_testing.py /tmp/set_3_for_testing.pyc")
+    #os.system("rm -f /tmp/set_3.py /tmp/set_3.pyc")
 
 if __name__ == '__main__':
     if len(sys.argv) != 3:
